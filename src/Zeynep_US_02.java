@@ -5,6 +5,7 @@ public class Zeynep_US_02 {
 
     public void Test3(){
         System.out.println("US2");
+        System.out.println("değişiklik merge testi");
 
     }
 }
