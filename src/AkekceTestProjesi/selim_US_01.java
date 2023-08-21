@@ -9,11 +9,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
+
 public class selim_US_01 {
     @Test
     public void test01(){
 
         WebDriver driver= new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         driver.get("https://www.akakce.com/");
 
