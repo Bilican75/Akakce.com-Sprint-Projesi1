@@ -27,11 +27,11 @@ public class Osman_US_03_2 {
         Bekle(2);
 
         WebElement inputEmail = driver.findElement(By.xpath("//input[@id='life']"));
-        inputEmail.sendKeys("osmanenosman@hotmail.com");
+        inputEmail.sendKeys("grup16basarir@gmail.com");
         Bekle(2);
 
         WebElement inputPassword = driver.findElement(By.xpath("//input[@id='lifp']"));
-        inputPassword.sendKeys("Tester2023+");
+        inputPassword.sendKeys("1234567Ss");
         Bekle(2);
 
         WebElement girisYapTikla = driver.findElement(By.xpath("(//input[@type='submit'])[2]"));
