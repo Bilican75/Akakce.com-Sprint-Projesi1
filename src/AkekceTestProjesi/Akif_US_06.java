@@ -7,7 +7,10 @@ public class Akif_US_06 {
     @Test
         public void Test1(){
 
+        System.out.println("deneme yazısı ekledim");
+        System.out.println("deneme yazısı ekledim");
 
+        int a = (int)(Math.random()*100+10);
 
         }
 
