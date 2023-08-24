@@ -27,7 +27,29 @@ public class Main_Test extends BaseDriver {
     public void Account_verification(){
         driver = new ChromeDriver();
 
+
         //Codu bu alana yazabiliriz
+        driver.get("https://www.akakce.com/");
+
+        WebElement hesapLogin=driver.findElement(By.xpath("//a[text()='Giriş Yap']"));
+        hesapLogin.click();
+
+        WebElement emailGiris=driver.findElement(By.xpath("//input[@id=\"life\"]"));
+        emailGiris.sendKeys("grup16basarir@gmail.com");
+
+        WebElement sifre= driver.findElement(By.xpath("//input[@id=\"lifp\"]"));
+        sifre.sendKeys("1234567Ss");
+
+        WebElement girisYap= driver.findElement(By.xpath("  //input[@id=\"lfb\"]"));
+        girisYap.click();
+
+        MyFunc.Bekle(3);
+
+        WebElement hesabim= driver.findElement(By.xpath("//div[@id='HM_v8']"));
+        //System.out.println(hesabim.getText());
+
+        hesabim.getText().contains("Selim");
+
 
         BekleVeKapat();
     }
